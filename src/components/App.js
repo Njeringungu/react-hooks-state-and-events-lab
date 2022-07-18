@@ -12,7 +12,6 @@ function App() {
 
   const appClass = isDarkMode ? "App dark" : "App light";
 
-  
   return (
     <div className={appClass}>
       <header>
@@ -25,5 +24,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

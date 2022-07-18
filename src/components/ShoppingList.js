@@ -8,13 +8,11 @@ function ShoppingList({ items }) {
     
     setSelectedCategory(event.target.value);
   }
-
   const itemsToDisplay = items.filter((item) => {
     if (selectedCategory === "All") return true;
 
     return item.category === selectedCategory;
   });
-
   return (
     <div className="ShoppingList">
       <div className="Filter">
@@ -33,6 +31,5 @@ function ShoppingList({ items }) {
     </div>
   );
 }
-
 
 export default ShoppingList;
